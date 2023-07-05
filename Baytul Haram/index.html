@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bayt.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="fon">
+            <div class="back-memorize-block">
+                <div class="floor-one">
+                    <div class="arch1"></div>
+                    <div class="arch2"></div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="floor-two">
+                    <div class="arch1"></div>
+                    <div class="arch2"></div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="polygon-block"></div>
+            <div class="kaba-block">
+                <div class="fundament">
+                    <div class="first-line">
+                        <span style="--s:12"></span>
+                        <span style="--s:5"></span>
+                        <span style="--s:7"></span>
+                        <span style="--s:11"></span>
+                        <span style="--s:9"></span>
+                        <span style="--s:13"></span>
+                        <span style="--s:8"></span>
+                        <span style="--s:10"></span>
+                        <span style="--s:4"></span>
+                        <span style="--s:6"></span>
+                    </div>
+                    <div class="second-line">
+                        <span style="--s:10"></span>
+                        <span style="--s:9"></span>
+                        <span style="--s:5"></span>
+                        <span style="--s:12"></span>
+                        <span style="--s:7"></span>
+                        <span style="--s:4"></span>
+                        <span style="--s:6"></span>
+                        <span style="--s:13"></span>
+                        <span style="--s:11"></span>
+                        <span style="--s:8"></span>
+                    </div>
+                    <div class="third-line">
+                        <span style="--s:7"></span>
+                        <span style="--s:10"></span>
+                        <span style="--s:12"></span>
+                        <span style="--s:11"></span>
+                        <span style="--s:6"></span>
+                        <span style="--s:8"></span>
+                        <span style="--s:9"></span>
+                        <span style="--s:5"></span>
+                        <span style="--s:13"></span>
+                        <span style="--s:4"></span>
+                    </div>
+                    <div class="black-stone"></div>
+                </div>
+                <div class="top-style-block">
+                    <div class="first-ribbon"></div>
+                    <div class="second-ribbon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="door-block"></div>
+                </div>
+            </div>
+            <div class="sky-block">
+                <div class="moon"></div>
+            </div>
+            <div class="towers-block">
+                <div class="first-tower-block">
+                    <div class="floor1"></div>
+                    <div class="floor2"></div>
+                    <div class="floor3"></div>
+                    <div class="floor4"></div>
+                    <div class="floor5"></div>
+                    <div class="floor6"></div>
+                    <div class="floor7"></div>
+                    <div class="floor8"></div>
+                    <div class="moon"></div>
+                </div>
+                <div class="second-tower-block">
+                    <div class="floor1"></div>
+                    <div class="floor2"></div>
+                    <div class="floor3"></div>
+                    <div class="floor4"></div>
+                    <div class="floor5"></div>
+                    <div class="floor6"></div>
+                    <div class="floor7"></div>
+                    <div class="floor8"></div>
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function stars(){
+            star = 500;
+            let sky = document.querySelector('.sky-block');
+            let a = 0;
+           while(a<star){
+            let starmore = document.createElement('span');
+            
+            let size = Math.random() * 5;
+            let posX = Math.floor(Math.random() * 600);
+            let posY = Math.floor(Math.random() * 275);
+            let delay = Math.random() * -20;
+             
+            starmore.style.left = posX + 'px';
+            starmore.style.top = posY + 'px';
+            starmore.style.animationDelay = delay + 's';
+            starmore.style.width = size * 0.4 + 'px';
+            starmore.style.height = size  * 0.4 + 'px';
+
+            sky.appendChild(starmore);
+            a++
+           }
+
+        }
+        stars()
+    </script>
+</body>
+</html>

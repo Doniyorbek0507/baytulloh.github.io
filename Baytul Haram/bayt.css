@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+ }
+ .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+
+ }
+ .fon {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: lavender;
+    overflow: hidden;
+ }
+ .fon .back-memorize-block {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 280px;
+    background: azure;
+ }
+ .fon .back-memorize-block .floor-one .arch1 {
+   position: absolute;
+   top: -5px;
+   width: 100%;
+   height: 10px;
+   background: rgb(255, 238, 238);
+   box-shadow: 0 0 35px 5px gold,
+         inset 0 0 25px 5px gold;
+ } 
+ .fon .back-memorize-block .floor-one .arch2 {
+   position: absolute;
+   top: 5px;
+   width: 100%;
+   height: 5px;
+   background: rgb(252, 224, 224);
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+ }
+
+ .fon .back-memorize-block .floor-one {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(236, 249, 245);
+ }
+ .fon .back-memorize-block .floor-one span {
+   box-shadow: 0 0 5px 2px gold,
+         inset 0 0 5px 2px gold;
+   position: relative;
+   margin: 5px;
+   gap: 10px;
+   height: 80%;
+   width: 60px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   background-color: rgb(244, 228, 228);
+ }
+ .fon .back-memorize-block .floor-two {
+   position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(244, 255, 251);
+}
+.fon .back-memorize-block .floor-two span {
+   position: relative;
+   margin: 5px;
+   gap: 10px;
+   height: 80%;
+   width: 60px;
+   box-shadow: 0 0 10px 2px gold,
+         inset 0 0 5px 2px gold;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   background-color: rgb(241, 248, 253);
+ }
+ .fon .back-memorize-block .floor-two .arch1 {
+   position: absolute;
+   top: 5px;
+   width: 100%;
+   height: 5px;
+   background: rgb(234, 255, 242);
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+ } 
+ .fon .back-memorize-block .floor-two .arch2 {
+   position: absolute;
+   top: -5px;
+   width: 100%;
+   height: 10px;
+   background: rgb(255, 223, 223);
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+ } 
+ /* Polygon */
+ .fon .polygon-block {
+   width: 100%;
+   height: 115px;
+   position: absolute;
+   bottom: 0;
+   background-color: rgb(243, 243, 130);
+ }
+ /* Ka'ba */ 
+.fon .kaba-block{
+   position: absolute;
+   left: 50%;
+   top: 90%;
+   transform: translate(-50%, -90%);
+   width: 250px;
+   height: 200px;
+   background: black;
+   /* border: 1px solid red; */
+}
+.fon .kaba-block .fundament {
+   width: 100%;
+   height: 30px;
+   position: absolute;
+   bottom: 0;
+}
+.fon .kaba-block .fundament .first-line {
+   width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   height: 33%;
+   /* background: green; */
+}
+.kaba-block .fundament .first-line span {
+   gap: 1px;
+   margin: 1px;
+   width: calc(240px / var(--s));
+   height: 100%;
+   background:rgb(137, 136, 136);
+   box-shadow: 0 0 1px 1px gold;
+}
+.fon .kaba-block .fundament .second-line {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 32%;
+   margin-top: 1px;
+   /* background: red; */
+}
+.kaba-block .fundament .second-line span {
+   gap: 1px;
+   margin: 1px;
+   width: calc(240px / var(--s));
+   height: 100%;
+   background:rgb(137, 136, 136);
+   box-shadow: 0 0 1px 1px gold;
+}
+.fon .kaba-block .fundament .third-line {
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 32%;
+   margin-top: 1px;
+   /* background: yellow; */
+}
+.kaba-block .fundament .third-line span {
+   gap: 1px;
+   margin: 1px;
+   width: calc(240px / var(--s));
+   height: 100%;
+   background:rgb(137, 136, 136);
+   box-shadow: 0 0 1px 1px gold;
+}
+.fon .kaba-block .fundament .black-stone {
+   width: 15px;
+   height: 20px;
+   position: absolute;
+   border-radius: 50%;
+   top: 5px;
+   left: -5px;
+   background: rgb(12, 19, 92);
+}
+.fon .kaba-block .top-style-block .first-ribbon {
+   width: 100%;
+   height: 20px;
+   position: absolute;
+   top: 30px;
+   background-color: gold;
+   border: 2px solid goldenrod;
+   filter: blur(2px);
+}
+.fon .kaba-block .top-style-block .second-ribbon {
+   width: 100%;
+   height: 20px;
+   position: absolute;
+   top: 55px;
+   /* border: 2px solid goldenrod; */
+}
+.kaba-block .top-style-block .second-ribbon span:nth-child(1) {
+   position: absolute;
+   height: 100%;
+   left: -1px;
+   width: 5px;
+   background: gold;
+   filter: blur(2px);
+}
+.kaba-block .top-style-block .second-ribbon span:nth-child(2) {
+   position: absolute;
+   height: 100%;
+   width: 15px;
+   background: gold;
+   border-radius: 50%;
+   left: 10px;
+   filter: blur(2px);
+}
+.kaba-block .top-style-block .second-ribbon span:nth-child(3) {
+   position: absolute;
+   height: 100%;
+   width: 15px;
+   background: gold;
+   border-radius: 50%;
+   left: 90px;
+   filter: blur(2px);
+}
+.kaba-block .top-style-block .second-ribbon span:nth-child(4) {
+   position: absolute;
+   height: 100%;
+   width: 110px;
+   background: gold;
+   left: 110px;
+   filter: blur(2px);
+}
+.kaba-block .top-style-block .second-ribbon span:nth-child(5) {
+   position: absolute;
+   height: 100%;
+   width: 15px;
+   background: gold;
+   left: 225px;
+   border-radius: 50%;
+   filter: blur(2px);
+}
+.kaba-block .top-style-block .second-ribbon span:nth-child(6) {
+   position: absolute;
+   height: 100%;
+   width: 5px;
+   background: gold;
+   left: 245px;
+   filter: blur(2px);
+}
+.fon .kaba-block .top-style-block .door-block{
+   width: 58px;
+   height:105px;
+   position: absolute;
+   left: 27.5px;
+   top: 55px;
+   background-color: gold;
+   filter: blur(2px);
+}
+/* Sky */
+.fon .sky-block {
+   width: 100%;
+   height: 275px;
+   position: absolute;
+   top: 0;
+   background: midnightblue;
+}
+.fon .sky-block .moon {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background: white;
+   position: absolute;
+   top: 10px;
+   left: 40px;
+   box-shadow: 0 0 50px 10px white;
+   filter: drop-shadow(0 0 30px white);
+}
+.fon .towers-block {
+   width: 300px;
+   height: 275px;
+   position: absolute;
+   left: 50%;
+   top: 0;
+   transform: translate(-50%, 0%);
+}
+.fon .towers-block .first-tower-block {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 0;
+   left: 20px;
+   width: 50px;
+   height: 55%;
+   background-color: antiquewhite;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor1 {
+   width: 100px;
+   height: 30px;
+   background: antiquewhite;
+   position: absolute;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+   bottom: 0;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor2 {
+   width: 90px;
+   height: 30px;
+   background: antiquewhite;
+   position: absolute;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+   top: 20px;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor3 {
+   width: 70px;
+   height: 4px;
+   background: antiquewhite;
+   position: absolute;
+   top: 15px;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor4 {
+   width: 86px;
+   height: 2px;
+   background: antiquewhite;
+   position: absolute;
+   top: 12px;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor5 {
+   width: 50px;
+   height: 30px;
+   background: antiquewhite;
+   position: absolute;
+   top: -10px;
+   border-radius: 30%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor6 {
+   width: 40px;
+   height: 40px;
+   background: antiquewhite;
+   position: absolute;
+   top: -40px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor7 {
+   width: 10px;
+   height: 10px;
+   background: antiquewhite;
+   position: absolute;
+   top: -49px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .floor8 {
+   width: 4px;
+   height: 40px;
+   background: antiquewhite;
+   position: absolute;
+   top: -80px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .first-tower-block .moon {
+   width: 20px;
+   height: 20px;
+   border: 2px solid antiquewhite;
+   border-top: none;
+   position: absolute;
+   top: -97px;
+   border-radius: 50%;
+}
+.fon .towers-block .second-tower-block .floor1 {
+   width: 100px;
+   height: 30px;
+   background: antiquewhite;
+   position: absolute;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+   bottom: 0;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .floor2 {
+   width: 90px;
+   height: 30px;
+   background: antiquewhite;
+   position: absolute;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+   top: 20px;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .floor3 {
+   width: 70px;
+   height: 4px;
+   background: antiquewhite;
+   position: absolute;
+   top: 15px;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .floor4 {
+   width: 86px;
+   height: 2px;
+   background: antiquewhite;
+   position: absolute;
+   top: 12px;
+   box-shadow: 0 0 25px 1px gold,
+         inset 0 0 25px 0.5px gold;
+}
+.fon .towers-block .second-tower-block .floor5 {
+   width: 50px;
+   height: 30px;
+   background: antiquewhite;
+   position: absolute;
+   top: -10px;
+   border-radius: 30%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .floor6 {
+   width: 40px;
+   height: 40px;
+   background: antiquewhite;
+   position: absolute;
+   top: -40px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .floor7 {
+   width: 10px;
+   height: 10px;
+   background: antiquewhite;
+   position: absolute;
+   top: -49px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .floor8 {
+   width: 4px;
+   height: 40px;
+   background: antiquewhite;
+   position: absolute;
+   top: -80px;
+   border-radius: 50%;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+.fon .towers-block .second-tower-block .moon {
+   width: 20px;
+   height: 20px;
+   border: 2px solid antiquewhite;
+   border-top: none;
+   position: absolute;
+   top: -97px;
+   border-radius: 50%;
+}
+.fon .towers-block .second-tower-block {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 0;
+   right: 20px;
+   width: 50px;
+   height: 55%;
+   background-color: antiquewhite;
+   box-shadow: 0 0 25px 5px gold,
+         inset 0 0 25px 5px gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sky-block span {
+            
+   position: absolute;
+   /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%,39% 35%); */
+   background: snow;
+  border-radius: 50%;
+  transform-origin: 200px;
+   animation: bluring 3s linear infinite;
+}
+@keyframes bluring {
+   0%,100%{
+       box-shadow: none;
+       
+   }
+   50%{
+       box-shadow:  0 0 60px 8px snow;
+      /* filter: drop-shadow(0 0 20px white); */
+   }
+}
